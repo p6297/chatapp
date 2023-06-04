@@ -3,7 +3,7 @@ import {useState, useEffect} from 'react'
 import {io} from "socket.io-client"
 import { nanoid } from 'nanoid';
 
-const socket = io.connect("http://localhost:5000")
+const socket = io.connect(process.env.URL)
 const username = nanoid(4)
 
 
